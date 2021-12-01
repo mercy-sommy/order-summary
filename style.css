@@ -1,0 +1,218 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    }
+
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("../order-summary-component-main/images/pattern-background-mobile.svg");
+    background-size: 100%;
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.container {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    width: 88%;
+    max-width: 450px;
+    margin: 7rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 20px hsla(245, 75%, 52%, 0.1), 15px 15px 30px hsla(245, 75%, 52%, 0.1);
+}
+
+.hero {
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+}
+
+.card-title {
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+
+.order-text {
+    color: var(--desaturated-blue);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.6rem 1rem ;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.plan-info {
+    background-color: var(--very-pale-blue);
+    width: 100%;
+    border-radius: 1.5rem;
+    padding: 1.5rem 1.2rem;
+    margin: 0.8rem 0.6rem;
+
+}
+
+.plan-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.plan{
+    font-size: 1rem;
+    padding: 1rem;
+
+}
+
+.annual-plan {
+    color: var(--very-blue);
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    font-size: 1.4rem;
+    opacity: 0.5;
+}
+
+a {
+    color: var(--bright-blue);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.payment {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-payment {
+    background-color: var(--bright-blue);
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px hsla(245, 75%, 52%, 0.1), 15px 15px 30px hsla(245, 75%, 52%, 0.1);box-shadow: 10px 10px 20px hsla(245, 75%, 52%, 0.15), 15px 15px 30px hsla(245, 75%, 52%, 0.15);
+}
+
+.btn-payment a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn-payment:hover {
+    opacity: 0.7;
+}
+
+.order {
+    padding: 0.8rem;
+}
+
+.order a {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.order a:hover {
+    color: var(--dark-blue);
+}
+
+
+@media (min-width:1440px) {
+    body {
+        background-image: url("../order-summary-component-main/images/pattern-background-desktop.svg");
+    }
+
+    .container {
+        align-items: center;
+        margin-top: 7rem;
+    }
+
+    .card {
+        margin-top: unset;
+    }
+
+    .card-info {
+        padding: 4rem 4.5rem;
+    }
+
+    .card-title {
+        font-size: 2.3rem;
+    }
+
+    .order-text {
+        font-size: 1.6rem;
+        line-height: 2.55rem;
+    }
+
+    .plan-info {
+        padding: 2rem;
+        margin: 0.4rem;
+    }
+
+    .plan-text {
+        gap: 2.2rem;
+    }
+
+    .annual-plan {
+        font-size: 1.6rem;
+    }
+
+    .price {
+        font-size: 1.6rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    .btn-payment {
+        margin: 3rem 0 2.4rem 0;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
